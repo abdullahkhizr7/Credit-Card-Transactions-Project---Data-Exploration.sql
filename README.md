@@ -9,9 +9,9 @@ This project performs **Exploratory Data Analysis (EDA)** on Indian credit card 
 ## 📊 Objectives
 
 - Understand credit card usage patterns in India
-- Detect potentially fraudulent or high-value transactions
+- Detect high-value transactions
 - Aggregate transactions by category, merchant, and city
-- Analyze daily, monthly, and hourly transaction trends
+- Analyze yearly, monthly, and daily transaction trends
 
 ---
 
