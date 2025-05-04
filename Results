@@ -1,0 +1,807 @@
+1- write a query to print top 5 cities with highest spends and their percentage contribution of total credit card spends 
+
+City           | Spending     | Percent_Contribution
+---------------|--------------|---------------------
+Greater Mumbai | 576751476    | 14.15
+Bengaluru      | 572326739    | 14.05
+Ahmedabad      | 567794310    | 13.93
+Delhi          | 556929212    | 13.67
+Kolkata        | 115466943    | 2.83
+
+
+
+2- write a query to print highest spend month and amount spent in that month for each card type
+
+Card_Type | Expenditure_In_Month | Expenditure | RN
+----------|---------------------|-------------|----
+Gold      | 1                   | 110146204   | 1
+Platinum  | 1                   | 112784373   | 1
+Signature | 10                  | 115694418   | 1
+Silver    | 3                   | 113547912   | 1
+
+
+3- write a query to print the transaction details(all columns from the table) for each card type when
+it reaches a cumulative of 1000000 total spends(We should have 4 rows in the o/p one for each card type)
+
+Transaction_ID | City      | Transaction_Date | Card_Type | Exp_Type | Gender | Amount | Total_Spend | RN
+--------------|-----------|------------------|-----------|----------|--------|--------|-------------|----
+1522          | Delhi     | 2013-10-04       | Gold      | Food     | M      | 281924 | 1272624     | 1
+191           | Ahmedabad | 2013-10-05       | Platinum  | Bills    | F      | 612572 | 1537482     | 1
+73            | Delhi     | 2013-10-04       | Signature | Bills    | F      | 550782 | 1285819     | 1
+7565          | Bengaluru | 2013-10-04       | Silver    | Food     | F      | 205179 | 1115582     | 1
+
+
+4- write a query to find city which had lowest percentage spend for gold card type
+
+City     | City_Spent
+---------|------------
+Dhamtari | 0.0001438236
+
+
+5- write a query to print 3 columns:  city, highest_expense_type , lowest_expense_type (example format : Delhi , bills, Fuel)
+City                       | Highest_Expense_Type | Lowest_Expense_Type
+---------------------------|---------------------|--------------------
+Achalpur                   | Grocery             | Entertainment
+Adilabad                   | Bills               | Food
+Adityapur                  | Food                | Grocery
+Adoni                      | Bills               | Entertainment
+Adoor                      | Fuel                | Bills
+Afzalpur                   | Fuel                | Food
+Agartala                   | Grocery             | Food
+Agra                       | Bills               | Grocery
+Ahmedabad                  | Bills               | Grocery
+Ahmednagar                 | Fuel                | Grocery
+Aizawl                     | Food                | Grocery
+Ajmer                      | Entertainment       | Fuel
+Akola                      | Bills               | Fuel
+Akot                       | Fuel                | Entertainment
+Alappuzha                  | Food                | Entertainment
+Aligarh                    | Bills               | Entertainment
+Alipurduar                 | Food                | Entertainment
+Alirajpur                  | Entertainment       | Entertainment
+Allahabad                  | Grocery             | Bills
+Alwar                      | Food                | Entertainment
+Amalapuram                 | Grocery             | Fuel
+Amalner                    | Entertainment       | Food
+Ambejogai                  | Food                | Grocery
+Ambikapur                  | Bills               | Food
+Amravati                   | Bills               | Food
+Amreli                     | Food                | Grocery
+Amritsar                   | Fuel                | Bills
+Amroha                     | Fuel                | Food
+Anakapalle                 | Fuel                | Bills
+Anand                      | Fuel                | Bills
+Anantapur                  | Food                | Grocery
+Anantnag                   | Grocery             | Entertainment
+Anjangaon                  | Food                | Bills
+Anjar                      | Food                | Grocery
+Ankleshwar                 | Grocery             | Bills
+Arakkonam                  | Grocery             | Food
+Arambagh                   | Food                | Entertainment
+Araria                     | Entertainment       | Fuel
+Arrah                      | Food                | Entertainment
+Arsikere                   | Food                | Entertainment
+Aruppukkottai              | Entertainment       | Fuel
+Arvi                       | Entertainment       | Food
+Arwal                      | Grocery             | Bills
+Asansol                    | Fuel                | Entertainment
+Ashok Nagar                | Grocery             | Food
+Athni                      | Entertainment       | Fuel
+Attingal                   | Fuel                | Food
+Aurangabad                 | Entertainment       | Fuel
+Azamgarh                   | Entertainment       | Fuel
+Bagaha                     | Entertainment       | Entertainment
+Bahadurgarh                | Food                | Bills
+Baharampur                 | Food                | Bills
+Bahraich                   | Fuel                | Food
+Balaghat                   | Fuel                | Grocery
+Balangir                   | Food                | Entertainment
+Baleshwar Town             | Bills               | Fuel
+Ballari                    | Fuel                | Grocery
+Balurghat                  | Food                | Bills
+Bankura                    | Bills               | Entertainment
+Bapatla                    | Food                | Grocery
+Baramula                   | Grocery             | Bills
+Barbil                     | Grocery             | Food
+Bargarh                    | Entertainment       | Bills
+Baripada Town              | Food                | Entertainment
+Barnala                    | Entertainment       | Food
+Barpeta                    | Bills               | Entertainment
+Batala                     | Bills               | Fuel
+Bathinda                   | Bills               | Entertainment
+Begusarai                  | Entertainment       | Grocery
+Belagavi                   | Food                | Entertainment
+Bellampalle                | Fuel                | Grocery
+Bengaluru                  | Bills               | Grocery
+Bettiah                    | Fuel                | Grocery
+Bhabua                     | Fuel                | Grocery
+Bhadrachalam               | Grocery             | Bills
+Bhadrak                    | Bills               | Fuel
+Bhagalpur                  | Fuel                | Entertainment
+Bhainsa                    | Food                | Bills
+Bharatpur                  | Food                | Entertainment
+Bharuch                    | Bills               | Food
+Bhatapara                  | Food                | Bills
+Bhavnagar                  | Entertainment       | Food
+Bhawanipatna               | Bills               | Fuel
+Bheemunipatnam             | Bills               | Entertainment
+Bhilai Nagar               | Fuel                | Food
+Bhilwara                   | Fuel                | Grocery
+Bhimavaram                 | Bills               | Grocery
+Bhiwandi                   | Grocery             | Bills
+Bhiwani                    | Fuel                | Grocery
+Bhongir                    | Food                | Entertainment
+Bhopal                     | Food                | Entertainment
+Bhubaneswar                | Fuel                | Bills
+Bhuj                       | Food                | Entertainment
+Bikaner                    | Entertainment       | Food
+Bilaspur                   | Fuel                | Grocery
+Bobbili                    | Food                | Grocery
+Bodhan                     | Food                | Bills
+Bokaro Steel City          | Grocery             | Bills
+Bongaigaon City            | Food                | Entertainment
+Brahmapur                  | Grocery             | Food
+Buxar                      | Fuel                | Grocery
+Byasanagar                 | Food                | Grocery
+Chaibasa                   | Bills               | Food
+Chalakudy                  | Entertainment       | Entertainment
+Chandausi                  | Food                | Entertainment
+Chandigarh                 | Food                | Food
+Changanassery              | Bills               | Bills
+Charkhi Dadri              | Grocery             | Entertainment
+Chatra                     | Grocery             | Food
+Chennai                    | Grocery             | Fuel
+Cherthala                  | Fuel                | Food
+Chikkamagaluru             | Entertainment       | Bills
+Chilakaluripet             | Bills               | Entertainment
+Chirala                    | Grocery             | Entertainment
+Chirkunda                  | Grocery             | Fuel
+Chirmiri                   | Food                | Entertainment
+Chittoor                   | Bills               | Food
+Chittur-Thathamangalam     | Grocery             | Entertainment
+Cuttack                    | Entertainment       | Bills
+Dalli-Rajhara              | Grocery             | Fuel
+Darbhanga                  | Grocery             | Entertainment
+Darjiling                  | Entertainment       | Food
+Davanagere                 | Bills               | Grocery
+Deesa                      | Fuel                | Grocery
+Dehradun                   | Grocery             | Food
+Dehri-on-Sone              | Entertainment       | Grocery
+Delhi                      | Bills               | Entertainment
+Deoghar                    | Grocery             | Bills
+Dhamtari                   | Food                | Grocery
+Dhanbad                    | Grocery             | Bills
+Dharmanagar                | Entertainment       | Grocery
+Dharmavaram                | Fuel                | Grocery
+Dhenkanal                  | Grocery             | Bills
+Dhoraji                    | Food                | Fuel
+Dhubri                     | Entertainment       | Fuel
+Dhule                      | Food                | Fuel
+Dhuri                      | Bills               | Entertainment
+Dibrugarh                  | Bills               | Food
+Dimapur                    | Bills               | Grocery
+Diphu                      | Bills               | Fuel
+Dumka                      | Bills               | Fuel
+Dumraon                    | Entertainment       | Grocery
+Durg                       | Grocery             | Food
+Eluru                      | Bills               | Grocery
+English Bazar              | Entertainment       | Grocery
+Erode                      | Food                | Bills
+Etawah                     | Food                | Fuel
+Faridabad                  | Bills               | Grocery
+Faridkot                   | Entertainment       | Fuel
+Farooqnagar                | Entertainment       | Food
+Fatehabad                  | Entertainment       | Grocery
+Fatehpur Sikri             | Grocery             | Food
+Fazilka                    | Food                | Food
+Firozabad                  | Grocery             | Grocery
+Firozpur                   | Grocery             | Entertainment
+Firozpur Cantt.            | Food                | Entertainment
+Forbesganj                 | Food                | Bills
+Gadwal                     | Bills               | Entertainment
+Gangarampur                | Bills               | Entertainment
+Ganjbasoda                 | Grocery             | Entertainment
+Gaya                       | Bills               | Food
+Giridih                    | Bills               | Grocery
+Goalpara                   | Fuel                | Bills
+Gobichettipalayam          | Bills               | Food
+Gobindgarh                 | Fuel                | Bills
+Godhra                     | Food                | Food
+Gohana                     | Food                | Grocery
+Gokak                      | Food                | Bills
+Gooty                      | Entertainment       | Food
+Gopalganj                  | Bills               | Food
+Greater Mumbai             | Bills               | Entertainment
+Gudivada                   | Fuel                | Grocery
+Gudur                      | Entertainment       | Food
+Gumia                      | Food                | Grocery
+Guntakal                   | Food                | Fuel
+Guntur                     | Grocery             | Entertainment
+Gurdaspur                  | Bills               | Food
+Gurgaon                    | Fuel                | Bills
+Guwahati                   | Entertainment       | Fuel
+Gwalior                    | Bills               | Entertainment
+Habra                      | Food                | Entertainment
+Hajipur                    | Entertainment       | Bills
+Haldwani-cum-Kathgodam     | Grocery             | Fuel
+Hansi                      | Food                | Fuel
+Hapur                      | Food                | Grocery
+Hardoi                     | Grocery             | Entertainment
+Hardwar                    | Fuel                | Bills
+Hazaribag                  | Bills               | Entertainment
+Hindupur                   | Entertainment       | Food
+Hisar                      | Bills               | Food
+Hoshiarpur                 | Bills               | Fuel
+Hubli-Dharwad              | Entertainment       | Fuel
+Hugli-Chinsurah            | Food                | Food
+Hyderabad                  | Grocery             | Travel
+Ichalkaranji               | Fuel                | Entertainment
+Imphal                     | Entertainment       | Food
+Indore                     | Grocery             | Entertainment
+Itarsi                     | Bills               | Fuel
+Jabalpur                   | Entertainment       | Bills
+Jagdalpur                  | Grocery             | Fuel
+Jaggaiahpet                | Entertainment       | Grocery
+Jagraon                    | Entertainment       | Fuel
+Jagtial                    | Fuel                | Entertainment
+Jaipur                     | Entertainment       | Travel
+Jalandhar                  | Grocery             | Bills
+Jalandhar Cantt.           | Fuel                | Grocery
+Jalpaiguri                 | Fuel                | Food
+Jamalpur                   | Bills               | Food
+Jammalamadugu              | Grocery             | Food
+Jammu                      | Food                | Bills
+Jamnagar                   | Bills               | Food
+Jamshedpur                 | Food                | Entertainment
+Jamui                      | Food                | Entertainment
+Jangaon                    | Food                | Fuel
+Jatani                     | Fuel                | Grocery
+Jehanabad                  | Grocery             | Bills
+Jhansi                     | Fuel                | Grocery
+Jhargram                   | Bills               | Grocery
+Jharsuguda                 | Fuel                | Entertainment
+Jhumri Tilaiya             | Bills               | Fuel
+Jind                       | Food                | Fuel
+Jodhpur                    | Food                | Fuel
+Jorhat                     | Entertainment       | Fuel
+Kadapa                     | Entertainment       | Fuel
+Kadi                       | Food                | Entertainment
+Kadiri                     | Fuel                | Grocery
+Kagaznagar                 | Fuel                | Grocery
+Kaithal                    | Entertainment       | Bills
+Kakinada                   | Entertainment       | Bills
+Kalimpong                  | Bills               | Fuel
+Kalpi                      | Fuel                | Grocery
+Kalyan-Dombivali           | Food                | Grocery
+Kamareddy                  | Grocery             | Entertainment
+Kancheepuram               | Grocery             | Bills
+Kandukur                   | Fuel                | Grocery
+Kanhangad                  | Food                | Fuel
+Kannur                     | Grocery             | Food
+Kanpur                     | Food                | Travel
+Kapadvanj                  | Fuel                | Entertainment
+Kapurthala                 | Food                | Grocery
+Karaikal                   | Food                | Bills
+Karimganj                  | Fuel                | Entertainment
+Karimnagar                 | Food                | Fuel
+Karjat                     | Entertainment       | Fuel
+Karnal                     | Food                | Grocery
+Karur                      | Bills               | Food
+Karwar                     | Food                | Fuel
+Kasaragod                  | Food                | Bills
+Kashipur                   | Entertainment       | Bills
+Kathua                     | Entertainment       | Bills
+Katihar                    | Entertainment       | Bills
+Kavali                     | Entertainment       | Grocery
+Kayamkulam                 | Food                | Bills
+Kendrapara                 | Fuel                | Food
+Kendujhar                  | Food                | Entertainment
+Keshod                     | Food                | Fuel
+Khair                      | Bills               | Fuel
+Khambhat                   | Entertainment       | Grocery
+Khammam                    | Fuel                | Food
+Khanna                     | Fuel                | Bills
+Kharagpur                  | Entertainment       | Bills
+Kharar                     | Grocery             | Entertainment
+Kishanganj                 | Entertainment       | Food
+Kochi                      | Entertainment       | Fuel
+Kodungallur                | Fuel                | Entertainment
+Kohima                     | Grocery             | Food
+Kolar                      | Fuel                | Food
+Kolkata                    | Entertainment       | Travel
+Kollam                     | Entertainment       | Fuel
+Koratla                    | Fuel                | Bills
+Korba                      | Fuel                | Bills
+Kot Kapura                 | Bills               | Entertainment
+Kothagudem                 | Grocery             | Bills
+Kottayam                   | Grocery             | Food
+Kovvur                     | Entertainment       | Food
+Koyilandy                  | Grocery             | Fuel
+Kozhikode                  | Fuel                | Food
+Kunnamkulam                | Fuel                | Food
+Kurnool                    | Fuel                | Entertainment
+Kyathampalle               | Food                | Grocery
+Lachhmangarh               | Grocery             | Entertainment
+Ladnu                      | Grocery             | Food
+Ladwa                      | Fuel                | Grocery
+Lahar                      | Bills               | Food
+Laharpur                   | Food                | Entertainment
+Lakheri                    | Grocery             | Entertainment
+Lakhimpur                  | Fuel                | Entertainment
+Lakhisarai                 | Entertainment       | Fuel
+Lakshmeshwar               | Bills               | Fuel
+Lal Gopalganj Nindaura     | Bills               | Bills
+Lalitpur                   | Grocery             | Fuel
+Lalsot                     | Food                | Fuel
+Lanka                      | Bills               | Food
+Lar                        | Entertainment       | Fuel
+Latur                      | Entertainment       | Fuel
+Limbdi                     | Bills               | Grocery
+Lingsugur                  | Entertainment       | Food
+Lonavla                    | Entertainment       | Bills
+Loni                       | Entertainment       | Bills
+Losal                      | Food                | Bills
+Lucknow                    | Grocery             | Travel
+Ludhiana                   | Food                | Grocery
+Lumding                    | Grocery             | Fuel
+Lunawada                   | Fuel                | Bills
+Lunglei                    | Entertainment       | Food
+Macherla                   | Bills               | Food
+Machilipatnam              | Fuel                | Food
+Madanapalle                | Entertainment       | Fuel
+Maddur                     | Entertainment       | Fuel
+Madhepura                  | Grocery             | Fuel
+Madhubani                  | Bills               | Grocery
+Madhugiri                  | Entertainment       | Grocery
+Madhupur                   | Entertainment       | Fuel
+Madikeri                   | Entertainment       | Bills
+Madurai                    | Entertainment       | Bills
+Mahalingapura              | Food                | Grocery
+Mahasamund                 | Fuel                | Grocery
+Mahbubnagar                | Fuel                | Fuel
+Mahe                       | Entertainment       | Bills
+Mahemdabad                 | Fuel                | Entertainment
+Mahesana                   | Bills               | Grocery
+Mahidpur                   | Bills               | Entertainment
+Mahnar Bazar               | Bills               | Fuel
+Mahuva                     | Bills               | Fuel
+Maihar                     | Fuel                | Grocery
+Mainaguri                  | Food                | Fuel
+Makhdumpur                 | Bills               | Grocery
+Makrana                    | Food                | Bills
+Malaj Khand                | Entertainment       | Food
+Malappuram                 | Bills               | Fuel
+Malavalli                  | Food                | Bills
+Malegaon                   | Food                | Grocery
+Malerkotla                 | Grocery             | Food
+Malkapur                   | Bills               | Entertainment
+Malout                     | Entertainment       | Bills
+Malpura                    | Entertainment       | Fuel
+Malur                      | Grocery             | Entertainment
+Manavadar                  | Fuel                | Grocery
+Mancherial                 | Grocery             | Entertainment
+Mandamarri                 | Bills               | Fuel
+Mandapeta                  | Bills               | Entertainment
+Mandi                      | Food                | Entertainment
+Mandi Dabwali              | Entertainment       | Grocery
+Mandideep                  | Grocery             | Bills
+Mandla                     | Fuel                | Bills
+Mandsaur                   | Food                | Fuel
+Mandvi                     | Entertainment       | Food
+Mandya                     | Grocery             | Bills
+Manendragarh               | Fuel                | Entertainment
+Maner                      | Bills               | Fuel
+Mangaluru                  | Grocery             | Food
+Manglaur                   | Fuel                | Food
+Mangrol                    | Entertainment       | Fuel
+Mangrulpir                 | Grocery             | Bills
+Manjlegaon                 | Grocery             | Food
+Mankachar                  | Bills               | Grocery
+Manmad                     | Entertainment       | Food
+Mansa                      | Entertainment       | Grocery
+Manuguru                   | Food                | Entertainment
+Manvi                      | Bills               | Grocery
+Manwath                    | Bills               | Entertainment
+Mapusa                     | Food                | Grocery
+Margao                     | Bills               | Food
+Markapur                   | Entertainment       | Bills
+Marmagao                   | Food                | Grocery
+Masaurhi                   | Bills               | Entertainment
+Mathura                    | Grocery             | Fuel
+Mattannur                  | Grocery             | Fuel
+Mavelikkara                | Fuel                | Bills
+Mavoor                     | Food                | Bills
+Medak                      | Bills               | Entertainment
+Medininagar (Daltonganj)   | Grocery             | Entertainment
+Medinipur                  | Bills               | Grocery
+Meerut                     | Entertainment       | Food
+Mehkar                     | Fuel                | Bills
+Memari                     | Fuel                | Entertainment
+Merta City                 | Grocery             | Fuel
+Mhow Cantonment            | Bills               | Fuel
+Mihijam                    | Grocery             | Fuel
+Mira-Bhayandar             | Bills               | Bills
+Miryalaguda                | Food                | Fuel
+Modasa                     | Fuel                | Food
+Modinagar                  | Entertainment       | Food
+Moga                       | Bills               | Grocery
+Mohali                     | Fuel                | Bills
+Mokameh                    | Food                | Grocery
+Mokokchung                 | Food                | Entertainment
+Moradabad                  | Entertainment       | Fuel
+Morena                     | Fuel                | Food
+Morshi                     | Bills               | Grocery
+Morvi                      | Bills               | Entertainment
+Motihari                   | Entertainment       | Bills
+Mudalagi                   | Bills               | Entertainment
+Muddebihal                 | Food                | Entertainment
+Mudhol                     | Entertainment       | Bills
+Muktsar                    | Entertainment       | Bills
+Mulbagal                   | Entertainment       | Bills
+Mundi                      | Entertainment       | Bills
+Mungeli                    | Food                | Grocery
+Munger                     | Food                | Grocery
+Murshidabad                | Entertainment       | Food
+Murtijapur                 | Grocery             | Fuel
+Murwara (Katni)            | Grocery             | Bills
+Musabani                   | Entertainment       | Grocery
+Mussoorie                  | Grocery             | Entertainment
+Muvattupuzha               | Fuel                | Bills
+Muzaffarpur                | Grocery             | Food
+Mysore                     | Grocery             | Bills
+Nabadwip                   | Fuel                | Food
+Nabarangapur               | Grocery             | Food
+Nabha                      | Fuel                | Food
+Nadbai                     | Fuel                | Entertainment
+Nadiad                     | Grocery             | Entertainment
+Nagaon                     | Food                | Entertainment
+Nagapattinam               | Bills               | Grocery
+Nagari                     | Food                | Fuel
+Nagarkurnool               | Grocery             | Bills
+Nagaur                     | Entertainment       | Food
+Nagda                      | Fuel                | Food
+Nagercoil                  | Food                | Entertainment
+Nagina                     | Grocery             | Fuel
+Nagpur                     | Food                | Entertainment
+Nahan                      | Entertainment       | Bills
+Naharlagun                 | Bills               | Entertainment
+Naidupet                   | Entertainment       | Bills
+Naihati                    | Fuel                | Bills
+Naila Janjgir              | Entertainment       | Food
+Nainital                   | Fuel                | Bills
+Najibabad                  | Grocery             | Fuel
+Nakodar                    | Fuel                | Entertainment
+Nalbari                    | Food                | Bills
+Namakkal                   | Fuel                | Grocery
+Nanded-Waghala             | Grocery             | Fuel
+Nandivaram-Guduvancheri    | Fuel                | Bills
+Nandura                    | Bills               | Bills
+Nandurbar                  | Food                | Fuel
+Nandyal                    | Bills               | Grocery
+Nangal                     | Food                | Grocery
+Nanjangud                  | Food                | Bills
+Nanjikottai                | Fuel                | Bills
+Nanpara                    | Grocery             | Food
+Narasapuram                | Bills               | Entertainment
+Narasaraopet               | Bills               | Bills
+Narayanpet                 | Entertainment       | Food
+Nargund                    | Food                | Grocery
+Narkatiaganj               | Fuel                | Grocery
+Narnaul                    | Fuel                | Entertainment
+Narsinghgarh               | Fuel                | Bills
+Narsipatnam                | Entertainment       | Bills
+Narwana                    | Fuel                | Fuel
+Nashik                     | Food                | Bills
+Nasirabad                  | Food                | Fuel
+Nathdwara                  | Entertainment       | Food
+Naugachhia                 | Fuel                | Bills
+Naugawan Sadat             | Fuel                | Grocery
+Nautanwa                   | Food                | Entertainment
+Navi Mumbai                | Entertainment       | Bills
+Navsari                    | Entertainment       | Bills
+Nawabganj                  | Fuel                | Entertainment
+Nawada                     | Food                | Entertainment
+Nawanshahr                 | Fuel                | Entertainment
+Nawapur                    | Grocery             | Fuel
+Nedumangad                 | Grocery             | Bills
+Neem-Ka-Thana              | Food                | Bills
+Neemuch                    | Food                | Bills
+Nehtaur                    | Entertainment       | Fuel
+Nelamangala                | Fuel                | Entertainment
+Nellikuppam                | Food                | Grocery
+Nellore                    | Entertainment       | Food
+Nepanagar                  | Entertainment       | Bills
+New Delhi                  | Bills               | Fuel
+Neyveli (TS)               | Fuel                | Bills
+Neyyattinkara              | Grocery             | Fuel
+Nidadavole                 | Fuel                | Bills
+Nilambur                   | Food                | Bills
+Nilanga                    | Food                | Bills
+Nimbahera                  | Entertainment       | Grocery
+Nirmal                     | Food                | Bills
+Nizamabad                  | Fuel                | Entertainment
+Nohar                      | Bills               | Food
+Noida                      | Fuel                | Food
+Nokha                      | Entertainment       | Grocery
+Nongstoin                  | Entertainment       | Fuel
+Noorpur                    | Grocery             | Entertainment
+North Lakhimpur            | Bills               | Food
+Nowgong                    | Fuel                | Grocery
+Nuzvid                     | Entertainment       | Food
+Oddanchatram               | Grocery             | Bills
+Ongole                     | Fuel                | Bills
+Orai                       | Grocery             | Fuel
+Osmanabad                  | Bills               | Grocery
+Ottappalam                 | Grocery             | Food
+Ozar                       | Bills               | Entertainment
+Pachora                    | Entertainment       | Fuel
+Padra                      | Fuel                | Entertainment
+Padrauna                   | Fuel                | Bills
+Paithan                    | Bills               | Food
+Pakaur                     | Fuel                | Entertainment
+Palacole                   | Food                | Fuel
+Palakkad                   | Grocery             | Bills
+Palani                     | Fuel                | Entertainment
+Palanpur                   | Food                | Fuel
+Palasa Kasibugga           | Bills               | Food
+Palghar                    | Fuel                | Entertainment
+Pali                       | Entertainment       | Bills
+Palia Kalan                | Fuel                | Entertainment
+Palitana                   | Fuel                | Entertainment
+Palladam                   | Fuel                | Entertainment
+Palwal                     | Fuel                | Entertainment
+Palwancha                  | Grocery             | Fuel
+Panaji                     | Bills               | Food
+Panchkula                  | Fuel                | Food
+Pandharkaoda               | Grocery             | Fuel
+Pandharpur                 | Bills               | Entertainment
+Pandhurna                  | Bills               | Grocery
+Pandua                     | Entertainment       | Grocery
+Panipat                    | Fuel                | Food
+Panna                      | Bills               | Entertainment
+Panruti                    | Fuel                | Grocery
+Panvel                     | Food                | Entertainment
+Pappinisseri               | Bills               | Food
+Paradip                    | Bills               | Bills
+Paramakudi                 | Food                | Grocery
+Paravoor                   | Fuel                | Grocery
+Parbhani                   | Bills               | Grocery
+Parlakhemundi              | Grocery             | Entertainment
+Parli                      | Food                | Grocery
+Partur                     | Fuel                | Grocery
+Parvathipuram              | Entertainment       | Grocery
+Pasan                      | Entertainment       | Grocery
+Paschim Punropara          | Entertainment       | Fuel
+Patan                      | Fuel                | Entertainment
+Pathanamthitta             | Grocery             | Food
+Pathankot                  | Grocery             | Food
+Pathri                     | Grocery             | Entertainment
+Patiala                    | Bills               | Food
+Patna                      | Grocery             | Fuel
+Patratu                    | Food                | Fuel
+Pattamundai                | Bills               | Food
+Patti                      | Grocery             | Food
+Pattukkottai               | Grocery             | Food
+Pavagada                   | Entertainment       | Food
+Pedana                     | Food                | Grocery
+Peddapuram                 | Grocery             | Fuel
+Pehowa                     | Food                | Grocery
+Pen                        | Grocery             | Entertainment
+Perambalur                 | Entertainment       | Bills
+Peringathur                | Entertainment       | Bills
+Perinthalmanna             | Bills               | Grocery
+Periyakulam                | Bills               | Food
+Periyasemur                | Food                | Bills
+Pernampattu                | Entertainment       | Bills
+Perumbavoor                | Entertainment       | Bills
+Petlad                     | Entertainment       | Food
+Phagwara                   | Fuel                | Bills
+Phalodi                    | Entertainment       | Fuel
+Phaltan                    | Grocery             | Fuel
+Phulabani                  | Fuel                | Bills
+Phusro                     | Grocery             | Bills
+Pihani                     | Grocery             | Fuel
+Pilani                     | Grocery             | Food
+Pilibanga                  | Fuel                | Food
+Pilibhit                   | Food                | Bills
+Pilkhuwa                   | Grocery             | Fuel
+Pinjore                    | Fuel                | Bills
+Pipar City                 | Entertainment       | Fuel
+Pipariya                   | Grocery             | Entertainment
+Pithampur                  | Food                | Grocery
+Pithapuram                 | Entertainment       | Fuel
+Pithoragarh                | Food                | Fuel
+Pollachi                   | Fuel                | Grocery
+Pondicherry                | Food                | Entertainment
+Ponnani                    | Grocery             | Fuel
+Ponnur                     | Entertainment       | Fuel
+Porbandar                  | Fuel                | Bills
+Porsa                      | Fuel                | Entertainment
+Port Blair                 | Fuel                | Entertainment
+Pratapgarh                 | Grocery             | Entertainment
+Proddatur                  | Grocery             | Entertainment
+Pudukkottai                | Entertainment       | Food
+Pulgaon                    | Grocery             | Fuel
+Puliyankudi                | Food                | Bills
+Punalur                    | Entertainment       | Grocery
+Punch                      | Grocery             | Entertainment
+Pune                       | Food                | Travel
+Punganur                   | Bills               | Food
+Puranpur                   | Food                | Bills
+Puri                       | Entertainment       | Food
+Purna                      | Fuel                | Bills
+Purnia                     | Bills               | Grocery
+Purulia                    | Fuel                | Grocery
+Pusad                      | Food                | Bills
+Puttur                     | Fuel                | Bills
+Raayachuru                 | Food                | Bills
+Rabkavi Banhatti           | Food                | Fuel
+Radhanpur                  | Grocery             | Fuel
+Rae Bareli                 | Entertainment       | Grocery
+Raghogarh-Vijaypur         | Bills               | Fuel
+Raghunathganj              | Grocery             | Food
+Rahuri                     | Bills               | Entertainment
+Raiganj                    | Food                | Fuel
+Raigarh                    | Grocery             | Bills
+Raipur                     | Food                | Grocery
+Raisen                     | Fuel                | Grocery
+Raisinghnagar              | Fuel                | Entertainment
+Rajagangapur               | Grocery             | Fuel
+Rajahmundry                | Bills               | Fuel
+Rajakhera                  | Food                | Grocery
+Rajampet                   | Grocery             | Bills
+Rajapalayam                | Grocery             | Entertainment
+Rajgarh (Churu)            | Grocery             | Bills
+Rajgir                     | Entertainment       | Bills
+Rajkot                     | Bills               | Fuel
+Rajnandgaon                | Grocery             | Fuel
+Rajpipla                   | Food                | Bills
+Rajpura                    | Fuel                | Food
+Rajsamand                  | Entertainment       | Fuel
+Rajula                     | Entertainment       | Fuel
+Ramachandrapuram           | Bills               | Food
+Ramagundam                 | Entertainment       | Grocery
+Ramanagaram                | Grocery             | Fuel
+Ramanathapuram             | Grocery             | Entertainment
+Ramdurg                    | Grocery             | Food
+Rameshwaram                  | Bills               | Entertainment
+Ramganj Mandi              | Food                | Entertainment
+Ramgarh                    | Fuel                | Bills
+Ramnagar                   | Bills               | Entertainment
+Ramngarh                   | Bills               | Food
+Rampur                     | Bills               | Food
+Rampura Phul               | Food                | Bills
+Rampurhat                  | Food                | Entertainment
+Ranaghat                   | Grocery             | Fuel
+Ranavav                    | Bills               | Grocery
+Ranchi                     | Bills               | Grocery
+Ranebennuru                | Food                | Grocery
+Ranibennur                 | Grocery             | Food
+Ranipet                    | Grocery             | Fuel
+Rasipuram                  | Food                | Entertainment
+Rasra                      | Entertainment       | Grocery
+Ratangarh                  | Entertainment       | Fuel
+Rath                       | Fuel                | Grocery
+Ratlam                     | Bills               | Grocery
+Ratnagiri                  | Food                | Fuel
+Raurkela                   | Food                | Bills
+Raver                      | Bills               | Entertainment
+Rawatbhata                 | Food                | Entertainment
+Rawatsar                   | Entertainment       | Fuel
+Raxaul Bazar               | Food                | Bills
+Rayachoti                  | Food                | Fuel
+Rayadurg                   | Entertainment       | Grocery
+Rayagada                   | Fuel                | Fuel
+Renukoot                   | Entertainment       | Food
+Repalle                    | Entertainment       | Bills
+Revelganj                  | Fuel                | Grocery
+Rewa                       | Entertainment       | Food
+Rewari                     | Entertainment       | Food
+Rishikesh                  | Bills               | Entertainment
+Risod                      | Fuel                | Grocery
+Robertsganj                | Food                | Entertainment
+Robertson Pet              | Fuel                | Entertainment
+Rohtak                     | Food                | Entertainment
+Roorkee                    | Entertainment       | Food
+Rosera                     | Fuel                | Bills
+Rudauli                    | Food                | Bills
+Rudrapur                   | Grocery             | Fuel
+Rupnagar                   | Grocery             | Bills
+Sabalgarh                  | Grocery             | Entertainment
+Sadabad                    | Food                | Grocery
+Sadasivpet                 | Fuel                | Bills
+Sadulpur                   | Fuel                | Bills
+Safidon                    | Bills               | Entertainment
+Sagar                      | Grocery             | Food
+Sagara                     | Entertainment       | Food
+Sagwara                    | Food                | Bills
+Saharanpur                 | Entertainment       | Grocery
+Saharsa                    | Food                | Entertainment
+Sahaswan                   | Food                | Entertainment
+Sahibganj                  | Grocery             | Entertainment
+Sailu                      | Fuel                | Grocery
+Sainthia                   | Bills               | Grocery
+Salaya                     | Grocery             | Food
+Salem                      | Bills               | Grocery
+Salur                      | Bills               | Food
+Samalkot                   | Food                | Fuel
+Samana                     | Food                | Entertainment
+Samastipur                 | Food                | Bills
+Sambalpur                  | Grocery             | Bills
+Sambhal                    | Entertainment       | Food
+Sanand                     | Grocery             | Food
+Sanawad                    | Fuel                | Entertainment
+Sandila                    | Entertainment       | Grocery
+Sanduru                    | Fuel                | Food
+Sangamner                  | Fuel                | Bills
+Sangareddy                 | Fuel                | Grocery
+Sangaria                   | Food                | Grocery
+Sangli                     | Bills               | Grocery
+Sangole                    | Bills               | Food
+Sangrur                    | Entertainment       | Grocery
+Sankarankoil               | Grocery             | Fuel
+Sankari                    | Food                | Entertainment
+Sankeshwara                | Entertainment       | Food
+Santipur                   | Fuel                | Bills
+Sarangpur                  | Food                | Grocery
+Sardarshahar               | Food                | Fuel
+Sardhana                   | Entertainment       | Food
+Sarni                      | Bills               | Food
+Sasaram                    | Entertainment       | Bills
+Sasvad                     | Food                | Entertainment
+Satana                     | Food                | Entertainment
+Satara                     | Food                | Bills
+Sathyamangalam             | Food                | Fuel
+Satna                      | Bills               | Food
+Sattenapalle               | Grocery             | Fuel
+Sattur                     | Bills               | Grocery
+Saunda                     | Bills               | Grocery
+Saundatti-Yellamma         | Food                | Fuel
+Savanur                    | Entertainment       | Fuel
+Savarkundla                | Entertainment       | Fuel
+Savner                     | Bills               | Grocery
+Sawai Madhopur             | Food                | Fuel
+Sedam                      | Food                | Grocery
+Sehore                     | Bills               | Entertainment
+
+
+
+6- write a query to find percentage contribution of spends by females for each expense type
+
++----------------+----------------+------------------+
+|   exp_type     | total_spendings| Percent_spending |
++----------------+----------------+------------------+
+| Entertainment  |     358663333  |       16.26362   |
+| Food           |     452817279  |       20.53303   |
+| Bills          |     580035469  |       26.30175   |
+| Fuel           |     392282421  |       17.78808   |
+| Travel         |      55865530  |        2.53323   |
+| Grocery        |     365646998  |       16.58029   |
++----------------+----------------+------------------+
+
+
+
+7- which card and expense type combination saw highest month over month growth in Jan-2014
+
++------------+-----------+---------+---------+--------------+-----------------+----------------+
+| card_type  | exp_type  | Year_a  | Month_a | total_spend  | prev_month_exp  | monthly_growth |
++------------+-----------+---------+---------+--------------+-----------------+----------------+
+| Platinum   | Grocery   | 2014    | 1       | 12256343     | 7757562         | 4498781        |
++------------+-----------+---------+---------+--------------+-----------------+----------------+
+
+
+8- during weekends which city has highest total spend to total no of transcations ratio 
++--------+-------+
+| city   | ratio |
++--------+-------+
+| Sonepur| 299905|
++--------+-------+
+
+
+9- which city took least number of days to reach its 500th transaction after the first transaction in that city
+
++------------+-------------+
+| city       | difference1 |
++------------+-------------+
+| Bengaluru  | 81          |
++------------+-------------+
